@@ -39,7 +39,8 @@ module Kramdown
       define_parser(:block_math, BLOCK_MATH_START)
 
 
-      INLINE_MATH_START = /\$\$(.*?)\$\$/m
+      #INLINE_MATH_START = /\$\$(.*?)\$\$/m
+      INLINE_MATH_START = /\$(.*?)\$/m
 
       # Parse the inline math at the current location.
       def parse_inline_math
